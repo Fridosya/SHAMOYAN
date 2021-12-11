@@ -1,0 +1,372 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.section1 {
+	background-image: url(https://kartinkin.net/uploads/posts/2021-07/thumbs/1626730739_20-kartinkin-com-p-fon-belo-goluboi-gradient-krasivo-23.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.header{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+h1 {
+	color: white;
+	font-size: 38px;
+}
+h1 span {
+	font-size: 48px;
+	display: block;
+}
+	
+.content {
+	max-width: 510px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+.text {
+	color: white;
+	display: block;
+}
+
+.phoneimg:hover {
+	animation-name: phoneimg; 
+	animation-duration: 3s; 
+	animation-iteration-count: infinite;  
+}
+
+@keyframes phoneimg {
+	0%{opacity: 100%;}
+	100%{opacity: 0%;}
+}
+
+h2:hover {
+	animation-name: example; 
+	animation-duration: 3s; 
+	animation-iteration-count: infinite;  
+}
+
+@keyframes example { 
+
+	0% { 
+		color: red; 
+	} 
+	30% { 
+		color: orange; 
+	} 	 
+	60% {
+		color: purple;
+	}
+	100% {
+		color: rgb(248, 95, 120); 	
+	} 
+} 
+
+.content .text {
+	max-width: 350px;
+}
+
+.logo {
+	margin-top: 70px;
+}
+
+.button
+{
+	background-color: #ffd429;
+	height: 40px;
+	padding: 0 30px;
+	border: none;
+}
+
+.section2 {
+	background-color: white;
+	width: 100%;
+	padding: 100px 0;
+}
+
+h2 
+{
+	font-size: 34px;
+	text-align: center;
+}
+
+.features
+{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.feature {
+	margin: 60px 0;
+	max-width: 300px;
+	text-align: center;
+
+}
+.featureimg {
+	width: 62px;   
+	transition-property: width; 
+	transition-duration: 1s; 
+	transition-timing-function: ease-in-out;  }
+
+.featureimg:hover{width: 100px;}
+
+h1 {transition: width 2s, height 2s, transform 2s; }
+
+h1:hover{
+	transform: rotate(15deg); 
+}
+
+.featuretext {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.featurelorem {
+	font-size: 16px;
+	color: gray;
+}
+
+.section4{
+	background-color: lightblue;
+	width: 100%;
+	padding: 100px 0;
+}
+
+.inputsblock {
+	margin: 50px auto;
+	max-width: 200px;
+}
+
+.input {	
+	height: 40px;
+	display: block;
+	padding: 0 10px;
+}
+
+.section4 .input{
+		margin-bottom: 20px;
+		width: 100%;
+}
+
+.inputsblock .button {
+	width: 100%
+}
+
+.section3{
+	width: 100%;
+	padding: 100px 0;
+	background-color: paleturquoise;
+}
+.orderblock
+{display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+
+.ordersummary{text-align: center;}
+
+.footer {
+	padding: 50px 0;
+	background-image: url(https://oir.mobi/uploads/posts/2021-03/1616549194_45-p-fon-sinii-gradient-47.jpg);
+}
+
+
+.footer .text{
+text-align: center;
+}
+
+.section3 .input
+{display: block;
+width: 50%}
+
+.group {display: flex;
+margin: 10px 0;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.group .input{
+	margin-left: auto;
+}
+
+.section3 .button {margin-left: auto;
+display: block;}
+
+.section3 span {
+margin-left: auto;}
+
+#color * {
+	color: white;
+}
+
+.phoneimg{     
+	width: 556px;   
+ }
+
+.logo:hover {
+	animation: hinge; 
+  animation-duration: 2s;
+}
+
+.button2:hover {
+	animation: shake infinite; 
+  animation-duration: 2s;
+}
+
+
+.textcovered {display: none;}
+
+@media screen and (max-width: 1200px) 
+{
+	.container{
+		width: 960px;
+	}
+}
+
+@media screen and (max-width: 992px) 
+{
+	.container{
+		width: 720px;
+	}
+	.wrapper{
+		flex-direction: column;
+	}
+	.offerblock{
+		width: 100%;
+		margin-top: 40px;
+	}
+	.content .text{
+		width: 100%;
+	}
+	.phoneimg{
+		display: block;
+		margin: 0 auto;
+		margin-top: 40px;	
+		width: 300px;	
+	}
+
+	.header{
+		padding-bottom: 110px;
+	}
+	.features{
+		display: block;
+	}
+	.feature{
+		margin: 40px auto;
+	}
+
+	.header{padding: 0;}
+}
+
+@media screen and (max-width: 768px) 
+{
+	.container{
+		width: 540px;
+	}
+
+
+	.features{
+		margin: 60px auto 0  auto;
+		width: 100%;
+	}
+	.content {margin-top: 30px;}
+	.logo {
+		margin-top: 20px;
+	}
+
+	h1 {font-size: 22px;}
+
+	h1 span {
+		font-size: 30px;
+	}
+
+	.group{
+		display: block;
+	}
+
+	.group input {
+		width: 90%;
+		margin: auto;
+	}
+
+}
+
+@media screen and (max-width: 576px) 
+{
+	.container{
+		width: 90%;
+		text-align: center;
+	}
+
+.content .text{margin: 0 auto;}
+
+	.section2{
+		padding-bottom: 100px;
+	}
+	.footer{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.orderblock {display: flex;
+	flex-direction: column;}
+
+	.button{
+		width: 100%;
+	}
+
+	.inputsblock{max-width: 100%;}
+
+	.ordersummary {margin-top: 50px;}
+
+	.phoneimg{
+		width: 220px;
+	}
+
+	.group select {
+		margin: 0 auto;
+	}
+
+	input#time {
+		margin-top: 10px;
+	}
+}
